@@ -1,5 +1,5 @@
 # Diffusion-Based Approximate Value Functions
-This repository contains the code for the [paper](https://openreview.net/forum?id=BkgkoToZZ7) on Diffusion-Based Approximate Value Functions. It contains the implementations for the experiments on SparseMountainCar-v0 and SparseHalfCheetah-v0. To use these environments, you must first install [them](https://github.com/mklissa/my-gym).
+This repository contains the code for the [work](https://openreview.net/forum?id=BkgkoToZZ7) on Diffusion-Based Approximate Value Functions. It contains the implementations for the experiments on SparseMountainCar-v0 and SparseHalfCheetah-v0. To use these environments, you must first install [them](https://github.com/mklissa/my-gym).
 
 #SparseMountainCar-v0
 
