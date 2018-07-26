@@ -12,6 +12,9 @@ setup(name='davf',
                         'tensorflow',
                         'networkx',
                         'scipy',
-                        'gym'
+                        'gym==0.9.3',
+                        'mujoco-py==0.5.7',
+                        'opencv-python',
+                        'sklearn'
                         ],
       packages=find_packages())

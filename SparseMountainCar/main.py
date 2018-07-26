@@ -5,13 +5,11 @@ import networkx as nx
 import gym
 import my_gym
 import itertools
-import matplotlib
 import numpy as np
 import sys
 import tensorflow as tf
 import collections
 import scipy.sparse as sp
-import matplotlib.pyplot as plt
 
 import sklearn.pipeline
 import sklearn.preprocessing
@@ -34,7 +32,7 @@ FLAGS = flags.FLAGS
 
 
 flags.DEFINE_integer('gen_graph', 1, 'Do you want to generate an approximate value function?')
-flags.DEFINE_integer('seed', 3, 'Random seed.')
+flags.DEFINE_integer('seed', 666, 'Random seed.')
 flags.DEFINE_integer('epochs', 50, 'Number of epochs to train the GCN.')
 flags.DEFINE_float('learning_rate', 0.005, 'Initial learning rate for GCN.')
 flags.DEFINE_float('weight_decay', 1e-2, 'Weight for L2 loss for GCN.')

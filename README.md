@@ -13,7 +13,7 @@ After which, you can run the experiments:
 
 ```
 cd SparseMountainCar
-python main.py --gen_graph
+python main.py
 ```
 
 # SparseHalfCheetah-v0
@@ -29,6 +29,6 @@ python setup.py install
 After which, you can run the experiments:
 
 ```
-cd ppo_gcn
+cd SparseHalfCheetah
 python run_mujoco.py
 ```

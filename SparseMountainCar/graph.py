@@ -5,7 +5,6 @@ from __future__ import print_function
 import time
 import tensorflow as tf
 import pdb
-import matplotlib.pyplot as plt
 import networkx as nx
 import os
 

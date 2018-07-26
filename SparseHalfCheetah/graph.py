@@ -4,9 +4,6 @@ from __future__ import print_function
 import pdb
 import time
 import tensorflow as tf
-import matplotlib.pyplot as plt
-import matplotlib
-from matplotlib import cm
 import networkx as nx
 import os
 from sklearn.cluster import SpectralClustering
@@ -17,8 +14,6 @@ from utils import *
 from gcn.models import GCN
 
 
-colors = [(0,0,0)] + [(cm.viridis(i)) for i in range(1,256)]
-new_map = matplotlib.colors.LinearSegmentedColormap.from_list('new_map', colors, N=256)
 FLAGS=g.gcn_args
 
 

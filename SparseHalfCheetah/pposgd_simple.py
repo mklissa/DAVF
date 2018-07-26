@@ -8,7 +8,7 @@ from baselines.common.mpi_moments import mpi_moments
 from mpi4py import MPI
 from collections import deque
 import networkx as nx
-import matplotlib.pyplot as plt
+
 import sklearn.neighbors as nn
 from graph import *
 from utils import *
