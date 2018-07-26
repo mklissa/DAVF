@@ -99,11 +99,10 @@ def actor_critic(sess, env,
 
     G = nx.Graph()
     totsteps = 0
-    stats = []
-    states= []
     done=False
-    node_ptr=0
-    change_lr=0
+    states= []      # Visited states history
+    stats = []      # Stats used to collect returns and save on disk
+    node_ptr=0      # Pointer used to track position in states' history
     lr=1e-3         # Learning rate for the actor and the critic
 
     for i_episode in range(num_episodes):
@@ -132,8 +131,8 @@ def actor_critic(sess, env,
             next_state, reward, done, _ = env.step(action)
             rewards += reward
 
-            node_ptr+=1
-            G.add_edge(node_ptr-1,node_ptr)
+            node_ptr+=1 # Move the pointer
+            G.add_edge(node_ptr-1,node_ptr) #Add transition
             
 
             # Calculate TD Target

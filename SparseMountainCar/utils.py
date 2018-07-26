@@ -4,7 +4,7 @@ import pdb
 
 
 def get_splits(y,source,sink,other_sources,other_sinks):
-    # pdb.set_trace()
+    """Initialize the sinks and sources labels"""
 
     idx_train = [source,sink]
 

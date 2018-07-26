@@ -112,18 +112,6 @@ class GCN(Model):
                     continue
                 self.loss += FLAGS.weight_decay * tf.nn.l2_loss(var)
 
-        outs = tf.nn.softmax(self.outputs)[:,1]
-
-
-        # first = tf.matmul(tf.transpose(tf.expand_dims(outs,1)),self.laplacian.astype(np.float32))
-        # total = tf.matmul(first,tf.expand_dims(outs,1))
-        # self.midloss = tf.reduce_sum(total) / len(self.edges)
-
-        # self.loss += 1*10**(-int(FLAGS.fig))*self.midloss
-        # self.loss += 1e-0*self.midloss
-
-
-
         # Cross entropy error
         self.loss += masked_softmax_cross_entropy(self.outputs, self.placeholders['labels'],
                                                   self.placeholders['labels_mask'])
