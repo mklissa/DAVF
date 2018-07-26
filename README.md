@@ -36,3 +36,4 @@ python run_mujoco.py
 # Results
 
 ![Alt text](/SparseMountainCar/resMountainCar.png?raw=true "Optional Title")
+![Alt text](/SparseHalfCheetah/resHalfCheetah.png?raw=true "Optional Title")
