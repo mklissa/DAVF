@@ -32,3 +32,7 @@ After which, you can run the experiments:
 cd SparseHalfCheetah
 python run_mujoco.py
 ```
+
+# Results
+
+![Alt text](/SparseMountainCar/resMountainCar.png?raw=true "Optional Title")
