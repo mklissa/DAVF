@@ -226,7 +226,7 @@ with tf.Session() as sess:
     value_estimator = ValueEstimator(featurizer,env)
 
     sess.run(tf.global_variables_initializer())
-    actor_critic(sess, env, policy_estimator, value_estimator, 1000)
+    actor_critic(sess, env, policy_estimator, value_estimator, num_episodes=1000)
 
 
 
